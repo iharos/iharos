@@ -1,7 +1,9 @@
 <?php
-require "Iharos/Kernel/Iharos.php";
+require "Iharos/src/Kernel/App.php";
+use Iharos\Label\Label;
 
-$app = new Iharos\Kernel\Iharos();
+$app = new Iharos\Kernel\App();
+$app::bind('Iharos\Label\LabelModule');
 
 Label::label("Uzenet");
 
