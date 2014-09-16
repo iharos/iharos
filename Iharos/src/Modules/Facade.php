@@ -1,7 +1,8 @@
 <?php
-// /Iharos/src/Kernel/Facade.php
+// /Iharos/src/Modules/Facade.php
 
-namespace Iharos\Kernel;
+namespace Iharos\Modules;
+use Iharos\Kernel\App;
 
 class Facade {
 	public static function getModuleClassName()

@@ -2,12 +2,10 @@
 // /Iharos/src/Label/Label.php
 
 namespace Iharos\Label;
-use Iharos\Kernel\Facade;
 
-class Label extends Facade {
-	public static function getModuleClassName()
+class Label {
+	public function label($msg)
 	{
-		return 'Iharos\Label\LabelModule';
+		echo $msg;
 	}
 }
-?>

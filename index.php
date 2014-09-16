@@ -1,10 +1,17 @@
 <?php
-require "Iharos/src/Kernel/App.php";
-use Iharos\Label\Label;
+require "Iharos/src/Kernel/Autoloader.php";
+//use Iharos\Modules\App;
+use Iharos\Modules\Request;
 
-$app = new Iharos\Kernel\App();
-$app::bind('Iharos\Label\LabelModule');
+//Iharos\Modules\App::boot();
 
-Label::label("Uzenet");
+//$app = new Iharos\Kernel\App();
+//$app::bind('Iharos\Validator\Validator');
+//$app::bind('Iharos\Request\Request');
 
+Request::parse();
+
+$r = Request::getInstance();
+var_dump($r->args);
+var_dump(Request::get('q'));
 ?>
