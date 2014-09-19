@@ -2,16 +2,15 @@
 // /Iharos/src/Kernel/App.php
 
 namespace Iharos\Kernel;
-use Iharos\Kernel\Autoloader;
+use Iharos\Modules\Request;
 
 class App
 {
-	/* Array of module instances
+	/* Array of module instances keyed by their full class name
+	 * ('Iharos\Kernel\App' => $this)
 	 * @var $module_instances array
 	*/
 	public static $module_instances;
-	
-	public $base_dir;
 
 	
 	public function __construct()
@@ -48,10 +47,9 @@ class App
 		return $instance;
 	}
 
-
-	public function error($msg)
-	{
-		die($msg);
+	
+	public function run() {
+		Request::parse();
 	}
 }
 ?>

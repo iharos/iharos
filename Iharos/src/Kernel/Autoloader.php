@@ -1,6 +1,6 @@
 <?php
-namespace Iharos\Kernel;
 // Iharos/src/Kernel/Autoloader.php
+namespace Iharos\Kernel;
 
 class Autoloader {
 	protected $base_dir;

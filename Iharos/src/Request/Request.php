@@ -5,7 +5,7 @@ namespace Iharos\Request;
 use Iharos\Modules\Validator;
 
 class Request {
-	public $method;
+	public $method; // get, post, etc.
 	public $url;
 	
 	/* Parts of the parsed URL
