@@ -1,7 +1,7 @@
 <?php
 // /Iharos/src/Modules/Facade.php
 
-namespace Iharos\Modules;
+namespace Iharos\Facades;
 use Iharos\Kernel\App;
 
 class Facade {

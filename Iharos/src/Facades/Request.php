@@ -1,8 +1,8 @@
 <?php
-// /Iharos/src/Modules/Request.php
+// /Iharos/src/Facades/Request.php
 
-namespace Iharos\Modules;
-use Iharos\Modules\Facade;
+namespace Iharos\Facades;
+use Iharos\Facades\Facade;
 
 class Request extends Facade {
 	public static function getModuleClassName()

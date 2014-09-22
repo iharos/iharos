@@ -1,8 +1,8 @@
 <?php
-// /Iharos/src/Modules/Label.php
+// /Iharos/src/Facades/Label.php
 
-namespace Iharos\Modules;
-use Iharos\Modules\Facade;
+namespace Iharos\Facades;
+use Iharos\Facades\Facade;
 
 class Label extends Facade {
 	public static function getModuleClassName()

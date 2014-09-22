@@ -1,8 +1,8 @@
 <?php
-// /Iharos/src/Modules/App.php
+// /Iharos/src/Facades/App.php
 
-namespace Iharos\Modules;
-use Iharos\Modules\Facade;
+namespace Iharos\Facades;
+use Iharos\Facades\Facade;
 
 class App extends Facade {
 	public static function getModuleClassName()
